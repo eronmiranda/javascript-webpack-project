@@ -5,9 +5,15 @@ import ForecastList from './components/ForecastList.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// import '@fortawesome/fontawesome-free/css/all.min.css'; 
+import 'bootstrap-css-only/css/bootstrap.min.css'; 
+// import 'mdbreact/dist/css/mdb.css';
+
 import '../../css/main.css';
 import '../../css/normalize.css';
 import '../../css/extra.css';
+
+
 
 const App = () => {
   const [weatherData, setWeatherData] = React.useState({});
