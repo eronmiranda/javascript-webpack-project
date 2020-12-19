@@ -2,6 +2,9 @@ import WeatherSearchForm from './components/WeatherSearchForm.js';
 import WeatherDisplay from './components/WeatherDisplay.js';
 import ForecastList from './components/ForecastList.js';
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const App = () => {
   const [weatherData, setWeatherData] = React.useState({});
 

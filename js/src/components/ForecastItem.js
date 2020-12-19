@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ForecastItem = (props) => {
   let {key, forecastDay} = props
 

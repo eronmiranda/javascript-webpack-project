@@ -1,3 +1,5 @@
+import React from 'react';
+
 const WeatherDisplay = (props) => {
   let {weatherData} = props
 

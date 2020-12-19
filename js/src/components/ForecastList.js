@@ -1,3 +1,5 @@
+import React from 'react';
+
 import ForecastItem from './ForecastItem.js';
 
 const ForecastList = (props) => {

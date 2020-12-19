@@ -1,5 +1,5 @@
 
-const API_KEY = 'YOUR_API_KEY';
+const API_KEY = '52fc99a956494caea7b135022179925e';
 const ENDPOINT = 'https://api.openweathermap.org/data/2.5/';
 
 const Weather = function(options) {
