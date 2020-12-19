@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 
@@ -17,6 +18,14 @@ module.exports = {
         use:{
           loader: 'babel-loader'
         }
+      },
+      {
+        test:/\.css$/i,
+        use:[{
+          loader: MiniCssExtractPlugin.loader
+          },
+          'css-loader'
+        ]
       }
     ]
   },
@@ -26,7 +35,10 @@ module.exports = {
       filename: './index.html',
       favicon: './favicon.ico'
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new MiniCssExtractPlugin({
+      filename:'main.css'
+    })
   ],
   devServer: {
     contentBase: path.join(__dirname,'build'),
